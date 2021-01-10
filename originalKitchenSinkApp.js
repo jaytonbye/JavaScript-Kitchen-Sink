@@ -1,6 +1,6 @@
-let myName: string = "Jason";
-const numStates: number = 50;
-let sumOf5and4: number = 4 + 5;
+let myName = "Jason";
+const numStates = 50;
+let sumOf5and4 = 4 + 5;
 
 function hello() {
   console.log("hello world");
@@ -8,7 +8,7 @@ function hello() {
 
 hello();
 
-function checkAge(name: string, age: number) {
+function checkAge(name, age) {
   if (age < 21) {
     console.log("sorry " + name + ", you aren't old enough to view this page");
   }
@@ -21,7 +21,7 @@ checkAge("John", 17);
 
 let favVeg = ["broc", "cauli", "corn"];
 
-for (let x of favVeg) {
+for (x of favVeg) {
   console.log(x);
 }
 
@@ -55,11 +55,11 @@ let objArray = [
   },
 ];
 
-for (let x of objArray) {
+for (x of objArray) {
   checkAge(x.name, x.age);
 }
 
-function getLength(word: string): number {
+function getLength(word) {
   return word.length;
 }
 
